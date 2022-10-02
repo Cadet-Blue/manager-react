@@ -1,0 +1,30 @@
+@import "_color.scss";
+
+// Buttons
+
+button {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn {
+  border: 1px solid $gray;
+  border-radius: 3px;
+  padding: 10px 30px;
+
+  &_white {
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 0.2rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+    &:hover {
+      color: $munsell;
+      background-color: $gray;
+    }
+  }
+}
